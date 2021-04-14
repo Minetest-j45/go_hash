@@ -31,11 +31,11 @@ func main() {
     
     fmt.Println(ia)
     
-    var before
+    var before []int32
     
     for i := range ia {
-        if not before {
-            before = 716//random number
+        if !before {
+            before = int32(716)//random number
         }
         ia[i] = ia[i]*before
         before = ia[i]
