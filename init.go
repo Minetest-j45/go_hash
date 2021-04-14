@@ -23,9 +23,11 @@ func main() {
         ia = append(ia, int32(v)) // convert the rune into int32 (just a type update, the data doesn't change, rune is just int32 with some methods) and append it to the result array
     }
 
-        fmt.Println(ia) // prints [115 116 114 32 116 111 32 105 110 116 32 99 111 110 118] you can iterate this and perform the % operation
+    fmt.Println(ia) // prints [115 116 114 32 116 111 32 105 110 116 32 99 111 110 118] you can iterate this and perform the % operation
     
     for i := range ia {
         ia[i] %= 7
     }
+    
+    fmt.Println(ia)
 }
