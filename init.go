@@ -40,4 +40,6 @@ func main() {
         ia[i] = ia[i]*before
         before = ia[i]
     }
+    
+    fmt.Println(ia)
 }
