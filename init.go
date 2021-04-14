@@ -30,4 +30,14 @@ func main() {
     }
     
     fmt.Println(ia)
+    
+    var before
+    
+    for i := range ia {
+        if not before {
+            before = 716//random number
+        }
+        ia[i] = ia[i]*before
+        before = ia[i]
+    }
 }
