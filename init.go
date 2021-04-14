@@ -23,4 +23,11 @@ func main() {
 	}
 
     	fmt.Println(ia) // prints [115 116 114 32 116 111 32 105 110 116 32 99 111 110 118] you can iterate this and perform the % operation
+	
+	var ib []int32
+	for _, int32 := range ia {
+		ib = append(ib, int32 % 7)
+	}
+	
+	fmt.Println(ib)
 }
