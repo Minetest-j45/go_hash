@@ -11,6 +11,8 @@ import (
 
 // a rune is actually just an int32 but we need to change the variable type in order to be able to pass it to functions etc.
 
+const multiplierInit = 716
+
 func main() {
     if len(os.Args) < 2 {
         log.Fatal("Not enough arguments!")
@@ -31,15 +33,9 @@ func main() {
     
     fmt.Println(ia)
     
-    var before []int32
-    
+    before := int32(multiplierInit)
     for i := range ia {
-        if !before {
-            before = int32(716)//random number
-        }
-        ia[i] = ia[i]*before
+        ia[i] = ia[i] * before
         before = ia[i]
     }
-    
-    fmt.Println(ia)
 }
