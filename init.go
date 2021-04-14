@@ -16,8 +16,7 @@ func main() {
 	}
 
 	input := strings.Join(os.Args[1:], " ") 
-	str := "str to int conv" // string to convert
-	ra := []rune(str)        // convert it to a rune array
+	ra := []rune(input)        // convert it to a rune array
 	var ia []int32           // empty int32 array to store the result in
 	for _, v := range ra {   // loop over every element of the rune array
 		ia = append(ia, int32(v)) // convert the rune into int32 (just a type update, the data doesn't change, rune is just int32 with some methods) and append it to the result array
