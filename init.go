@@ -17,8 +17,6 @@ func main() {
 
     input := strings.Join(os.Args[1:], " ") 
     ba := []byte(input)
-
-    fmt.Println(ba)
     
     before := uint8(multiplierInit)
     
@@ -29,7 +27,5 @@ func main() {
         }
         before = ba[b]
     }
-
-    fmt.Println(ba)
     fmt.Println(hex.EncodeToString(ba))
 }
