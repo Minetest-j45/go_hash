@@ -20,7 +20,7 @@ func main() {
 
     fmt.Println(ba)
     
-    before := int32(multiplierInit)
+    before := uint8(multiplierInit)
     
     for b := range ba {
         ba[b] = (ba[b] % (multiplierInit * before) )* before
