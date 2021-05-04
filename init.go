@@ -8,7 +8,7 @@ import (
     "strings"
 )
 
-const multiplierInit = 716
+const multiplierInit = 62
 
 func main() {
     if len(os.Args) < 2 {
