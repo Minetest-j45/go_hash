@@ -5,8 +5,6 @@ import (
     "log"
     "os"
     "strings"
-
-    "github.com/tncardoso/gocurses"
 )
 
 // a rune is actually just an int32 but we need to change the variable type in order to be able to pass it to functions etc.
