@@ -16,21 +16,17 @@ func main() {
     }
 
     input := strings.Join(os.Args[1:], " ") 
-    ra := []rune(input)
-    var ia []int32
-    for _, v := range ra {
-        ia = append(ia, int32(v))
-    }
+    ba := []byte(input)
 
-    fmt.Println(ia)
+    fmt.Println(ba)
     
     before := int32(multiplierInit)
     
-    for i := range ia {
-        ia[i] = (ia[i] % (multiplierInit * before) )* before
-        before = ia[i]
+    for b := range ba {
+        ba[b] = (ba[b] % (multiplierInit * before) )* before
+        before = ba[b]
     }
 
-    fmt.Println(ia)
-    fmt.Println(hex.EncodeToString(ia))
+    fmt.Println(ba)
+    fmt.Println(hex.EncodeToString(ba))
 }
