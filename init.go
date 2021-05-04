@@ -24,6 +24,9 @@ func main() {
     
     for b := range ba {
         ba[b] = (ba[b] % (multiplierInit * before) )* before
+        if ba[b] <= 0 {
+           ba[b] = before
+        }
         before = ba[b]
     }
 
