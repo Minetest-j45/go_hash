@@ -1,3 +1,3 @@
 # Go Hash
 NOTE THIS IS NOT SAFE AND WAS JUST A TEST<br>
-A simple hashing algorithm made in Go
+A custom hashing algorithm written in Go
